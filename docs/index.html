@@ -1,0 +1,402 @@
+<html>
+
+<head>
+  <title>NSF UAV Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class='content'>
+    <table>
+      <tr>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/NSF_logo.svg" alt="NSF Logo" width="100"
+            height="100"></td>
+        <td><img src="https://www.csusm.edu/communications/images/branding-images/csusmlogo_fullnamehillsabove_blue.jpg"
+            alt="CSUSM Logo" height="85"></td>
+        <td><img
+            src="https://pxl-umassdedu.terminalfour.net/fit-in/1200x800/filters:format(webp)/filters:quality(90)/prod01/production-cdn-pxl/media/supportingfiles/layoutassets/logos/umassd/stacked/umassd-stacked-rgb-cs.20230503134656216-1.png"
+            alt="UMassD Logo" height="85"></td>
+      </tr>
+    </table>
+    <h1 id="rethinking-the-security-of-ai-assisted-uav-paradigm">Rethinking the Security of AI-assisted UAV Paradigm
+    </h1>
+    <p>With the explosive development of AI techniques in recent years, AI-assisted UAV paradigm is increasingly drawing
+      research attention in both academia and industry to enhance many UAV activities. However, limited attention has
+      been given to the corresponding security and safety concerns raised by the integration. Specifically, AI models
+      have been shown to be vulnerable to adversarial inputs. If such vulnerabilities are also valid in the context of
+      AI-assisted UAV paradigm, their exploitation by malicious entities can cause severe security and safety
+      consequences. This project aims to study the security of the AI-assisted UAV paradigm by 1) developing a research
+      platform for the secure integration of AI and UAV, 2) performing security analysis on the AI-enabled anomaly
+      detection approaches, and 3) investigating robust AI-assisted UAV operations in adversarial environments.</p>
+    <p><strong>We are looking for motivated students to join this AI and UAV Security research!</strong></p>
+    <hr />
+    <h2 id="research-on-gps-spoofing-attack-and-detection">Research on GPS spoofing attack and detection</h2>
+    <video width="720px" poster="./gps-spoofing.jpg" controls style="padding-bottom: 10px;">
+      <source src="./gps-spoofing.m4v" type="video/mp4">
+    </video>
+    <p>We studied stealthy GPS spoofing attack against UAV, and successfully demonstrated that UAV could drift away or
+      potentially being taken over under this attack. Specifically, attackers can continuously introduce a small amount
+      of attacking values (wrong GPS position), which is not sensitive enough to trigger the abnormal alarm but
+      gradually affect the position of UAVs by confusing the UAVs to mistakenly apply their built-in position
+      adjustment. We also proposed an effective AI-enabled detection approach using multi-sensor fusion.</p>
+    <hr />
+    <h2 id="research-on-robust-uav-tracking-in-adversarial-environments">Research on robust UAV tracking in adversarial
+      environments</h2>
+    <p><img src="./uav-tracking.png" alt="project" width="auto" style="padding-bottom: 10px; width: 60%;"></p>
+    <p>We proposed a new UAV tracking solution integrating a reconstruction module with an anomaly detection module to
+      enhance the robustness of UAV tracking systems against attacks. Our reconstruction module processes video frames
+      to mitigate adversarial impacts without compromising tracking performance on clean frames. The anomaly detection
+      module employs a reference generator to dynamically construct adversarial reference samples for feature map
+      comparisons to effectively detect attacks.</p>
+    <hr />
+    <h2 id="research-on-adversarial-patch-attack-and-solution">Research on adversarial patch attack and solution</h2>
+    <p><img src="./adversarial.png" alt="project" width="auto" style="padding-bottom: 10px; width: 60%;"></p>
+    <p>We also had an ongoing research on the adversarial patch attack against UAV stereo camera AI-assisted depth
+      estimation.</p>
+    <hr />
+    <div style="margin-bottom:-10px;">Acknowledgements</div>
+    <p>This project is supported by National Science Foundation CISE Research Expansion Program (MSI).</p>
+
+  </div>
+  <style type='text/css'>
+    body {
+      font: 400 16px/1.5 Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #000;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-feature-settings: "kern" 1;
+      -moz-font-feature-settings: "kern" 1;
+      -o-font-feature-settings: "kern" 1;
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      /* padding: 30px; */
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 5px;
+      }
+
+      body>.content {
+        padding: 0px 20px 20px 20px !important;
+      }
+    }
+
+    body>.content {
+      margin: 0px;
+      max-width: 900px;
+      /* border: 1px solid #e1e4e8; */
+      /* padding: 10px 40px; */
+      padding-top: 30px;
+      padding-bottom: 20px;
+      border-radius: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    summary {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    hr {
+      color: #bbb;
+      background-color: #bbb;
+      height: 1px;
+      flex: 0 1 auto;
+      margin: 1em 0;
+      padding: 0;
+      border: none;
+    }
+
+    .hljs-operator {
+      color: #868686;
+      /* There is a bug where the syntax highlighter would pick no color for e.g. `&&` symbols in the code samples. Let's overwrite this */
+    }
+
+
+    /**
+ * Links
+ */
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #0366d6;
+    }
+
+    a:hover {
+      color: #0366d6;
+      text-decoration: underline;
+    }
+
+    pre {
+      background-color: #f6f8fa;
+      border-radius: 3px;
+      font-size: 85%;
+      line-height: 1.45;
+      overflow: auto;
+      padding: 16px;
+    }
+
+
+    /**
+  * Code blocks
+  */
+
+    code {
+      background-color: rgba(27, 31, 35, .05);
+      border-radius: 3px;
+      font-size: 85%;
+      margin: 0;
+      word-wrap: break-word;
+      padding: .2em .4em;
+      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    }
+
+    pre>code {
+      background-color: transparent;
+      border: 0;
+      display: inline;
+      line-height: inherit;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      word-wrap: normal;
+      font-size: 100%;
+    }
+
+
+    /**
+ * Blockquotes
+ */
+
+    blockquote {
+      margin-left: 30px;
+      margin-top: 0px;
+      margin-bottom: 16px;
+      border-left-width: 3px;
+      padding: 0 1em;
+      color: #828282;
+      border-left: 4px solid #e8e8e8;
+      padding-left: 15px;
+      font-size: 18px;
+      letter-spacing: -1px;
+      font-style: italic;
+    }
+
+    blockquote * {
+      font-style: normal !important;
+      letter-spacing: 0;
+      color: #6a737d !important;
+    }
+
+
+    /**
+ * Tables
+ */
+
+    table {
+      border-spacing: 2px;
+      display: block;
+      font-size: 14px;
+      overflow: auto;
+      width: 100%;
+      margin-bottom: 16px;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 6px 13px;
+      /* border: 1px solid #dfe2e5; */
+    }
+
+    th {
+      font-weight: 600;
+      padding: 6px 13px;
+      /* border: 1px solid #dfe2e5; */
+    }
+
+    tr {
+      background-color: #fff;
+      /* border-top: 1px solid #c6cbd1; */
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+
+    /**
+ * Others
+ */
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #24292e;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    li {
+      color: #24292e;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    li+li {
+      margin-top: 0.25em;
+    }
+
+    * {
+      font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #359967;
+      /* color: #24292e; */
+    }
+
+    a:visited {
+      color: #0366d6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      /* border-bottom: 1px solid #eaecef; */
+      color: #000;
+      /* Darker */
+    }
+
+    code>* {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    }
+
+    .navbar {
+      border-bottom: 1px solid #bbb;
+      background-color: #000;
+      position: fixed;
+      padding: .5rem 1rem;
+      max-width: 900px;
+    }
+  </style>
+  <style type='text/css'>
+    pre code.hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 1em
+    }
+
+    code.hljs {
+      padding: 3px 5px
+    }
+
+    /*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+    .hljs {
+      color: #abb2bf;
+      background: #282c34
+    }
+
+    .hljs-comment,
+    .hljs-quote {
+      color: #5c6370;
+      font-style: italic
+    }
+
+    .hljs-doctag,
+    .hljs-keyword,
+    .hljs-formula {
+      color: #c678dd
+    }
+
+    .hljs-section,
+    .hljs-name,
+    .hljs-selector-tag,
+    .hljs-deletion,
+    .hljs-subst {
+      color: #e06c75
+    }
+
+    .hljs-literal {
+      color: #56b6c2
+    }
+
+    .hljs-string,
+    .hljs-regexp,
+    .hljs-addition,
+    .hljs-attribute,
+    .hljs-meta .hljs-string {
+      color: #98c379
+    }
+
+    .hljs-attr,
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-selector-class,
+    .hljs-selector-attr,
+    .hljs-selector-pseudo,
+    .hljs-number {
+      color: #d19a66
+    }
+
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-link,
+    .hljs-meta,
+    .hljs-selector-id,
+    .hljs-title {
+      color: #61aeee
+    }
+
+    .hljs-built_in,
+    .hljs-title.class_,
+    .hljs-class .hljs-title {
+      color: #e6c07b
+    }
+
+    .hljs-emphasis {
+      font-style: italic
+    }
+
+    .hljs-strong {
+      font-weight: bold
+    }
+
+    .hljs-link {
+      text-decoration: underline
+    }
+  </style>
+</body>
+
+</html>
