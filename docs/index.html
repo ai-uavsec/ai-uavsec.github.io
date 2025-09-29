@@ -44,11 +44,16 @@
     <h2 id="research-on-robust-uav-tracking-in-adversarial-environments">Research on robust UAV tracking in adversarial
       environments</h2>
     <p><img src="./uav-tracking.png" alt="project" width="auto" style="padding-bottom: 10px; width: 60%;"></p>
-    <p>We proposed a new UAV tracking solution integrating a reconstruction module with an anomaly detection module to
-      enhance the robustness of UAV tracking systems against attacks. Our reconstruction module processes video frames
-      to mitigate adversarial impacts without compromising tracking performance on clean frames. The anomaly detection
-      module employs a reference generator to dynamically construct adversarial reference samples for feature map
-      comparisons to effectively detect attacks.</p>
+    <p> We proposed robust pluggable tracking solutions compatible with various Siamese-based trackers to enhance the performance of UAV tracking systems in adversarial environments. To mitigate the impact of attacks, we develop an input reconstruction module that purifies video frames by effectively eliminating adversarial perturbations and restoring them to their clean versions. The key motivation behind our design is to prevent feature variance and distortion caused by adversarial perturbations from propagating through the tracking pipeline to the prediction stage. To achieve this, our module employs a dual-level optimization strategy that operates at both feature and decision levels. This approach ensures effective mitigation of adversarial perturbations during intermediate feature extraction and final decision-making stages. Consequently, the reconstructed output serves as a robust input for the subsequent tracker, enabling accurate and reliable tracking predictions across diverse and challenging adversarial scenarios. Our reconstruction module is designed as a pluggable input pre-processing stage to be easily integrated into existing tracking systems, making it adaptable to different tracking architectures without modifications.</p>
+    <video width="720px" id="uav_tracking_attack" src="car_attack.mov" controls></video>
+<h3>Demos of UAV Object Tracking under Attacks with our Solutions</h3>
+  <video width="720px" id="uav_tracking_recover" src="car_recover.mov" controls></video>
+
+  <h3>Related Publication</h3>
+  <ul>
+    <li>Mengjie Jia, Yanyan Li, Houbing Herbert Song, and Jiawei Yuan, "A Pluggable Solution For Robust UAV Tracking Against Attacks", in IEEE Internet of Things Journal, 2025.</li>
+    <li>Mengjie Jia, Yanyan Li, and Jiawei Yuan, "A Robust UAV Tracking Solution in the Adversarial Environment", In the proceeding of IEEE 36th International Conference on Tools with Artificial Intelligence (ICTAI), Herndon, VA, USA, October 2024.</li>
+  </ul>
     <hr />
     <h2 id="research-on-adversarial-patch-attack-and-solution">Research on adversarial patch attack and solution</h2>
     <p><img src="./adversarial.png" alt="project" width="auto" style="padding-bottom: 10px; width: 60%;"></p>
